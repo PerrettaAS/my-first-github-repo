@@ -1,13 +1,15 @@
 header {
         display: inline-block;
+        background-color: #FFFFFF;
         height: 400px;
-        width: 97.5%;
+        width: 90%;
+        margin-left: 5%;
 }
  
 header div#avatar {
         float: left;
         margin-top: 100px;
-        margin-left: 34.3%;
+        margin-left: 33.33%;
         height: 256px;
         width: 256px;
 }
@@ -15,6 +17,7 @@ header div#avatar {
 header div.name {
         position: relative;
         left: 2.5%;
+        color: #523955;
         font-family: 'Roboto', serif;
         font-size: 225%;
 }
