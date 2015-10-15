@@ -1,19 +1,34 @@
 html, body {
         padding: 0px;
         margin: 0px;
-        background-color: #C2D6D6;
-}
- 
-header {
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 400px;
         background-color: #FFFFFF;
 }
  
-#avatar {
+header {
+        display: inline-block;
+        width: 100%;
+        height: 400px;
+}
+ 
+header div#avatar {
+        float: left;
+        margin-top: 100px;
+        margin-left: 34.3%;
+        height: 256px;
+        width: 256px;
+}
+
+header div.name {
         position: relative;
-        top: 30%;
-        left: 30%;
+        left: 2.5%;
+        font-family: 'Roboto', serif;
+        font-size: 225%;
+}
+
+header div.name#first {
+        margin-top: 135px;
+}
+
+header div.name#last {
+        margin-top: -30px;
 }
