@@ -1,0 +1,11 @@
+div.content {
+	float: left;
+	display: block;
+	border: 5px;
+	border-style: groove;
+	border-color: #000000;
+	margin-left: 5%;
+	height: 200px;
+	width: 40%;
+	background-color: #FFFFFF;
+}

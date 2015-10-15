@@ -16,16 +16,17 @@ header div#avatar {
 
 header div.name {
         position: relative;
+        display: block;
         left: 2.5%;
         color: #523955;
         font-family: 'Roboto', serif;
-        font-size: 225%;
+        font-size: 325%;
 }
 
 header div.name#first {
-        margin-top: 135px;
+        margin-top: 150px;
 }
 
 header div.name#last {
-        margin-top: -30px;
+        margin-top: 50px;
 }

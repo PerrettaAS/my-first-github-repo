@@ -1,8 +1,7 @@
 @import 'header.css';
 @import 'nav.css';
+@import 'content.css';
 
 html, body {
-        padding: 0px;
-        margin: 0px;
         background-color: #DDDDDD;
 }
