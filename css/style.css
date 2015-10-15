@@ -1,34 +1,8 @@
+@import 'header.css';
+@import 'nav.css';
+
 html, body {
         padding: 0px;
         margin: 0px;
         background-color: #FFFFFF;
-}
- 
-header {
-        display: inline-block;
-        width: 100%;
-        height: 400px;
-}
- 
-header div#avatar {
-        float: left;
-        margin-top: 100px;
-        margin-left: 34.3%;
-        height: 256px;
-        width: 256px;
-}
-
-header div.name {
-        position: relative;
-        left: 2.5%;
-        font-family: 'Roboto', serif;
-        font-size: 225%;
-}
-
-header div.name#first {
-        margin-top: 135px;
-}
-
-header div.name#last {
-        margin-top: -30px;
 }
