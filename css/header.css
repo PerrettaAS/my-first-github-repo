@@ -1,32 +1,39 @@
 header {
-        display: inline-block;
-        background-color: #FFFFFF;
-        height: 400px;
-        width: 90%;
-        margin-left: 5%;
-}
- 
-header div#avatar {
-        float: left;
-        margin-top: 100px;
-        margin-left: 34%;
-        height: 256px;
-        width: 256px;
-}
-
-header div.name {
         position: relative;
-        display: block;
-        left: 2.5%;
-        color: #523955;
-        font-family: 'Roboto', serif;
-        font-size: 325%;
+        display: inline-block;
+        height: 75px;
+        width: 100%;
 }
 
-header div.name#first {
-        margin-top: 150px;
+header nav {
+        background-color: #FFFFFF;
+        box-shadow: 0px 1px 5px #000000;
 }
 
-header div.name#last {
-        margin-top: 50px;
+header nav ul {
+        margin-left: 33.33%;
+        width: 33.33%;
 }
+
+header nav ul li {
+        display: inline-block;
+        width: 18%;
+        margin-left: 1%;
+}
+
+header nav ul li#active {
+        background-color: #F3F3F3;
+}
+
+header nav ul li:hover {
+        background-color: #DDDDDD;
+}
+
+header nav ul li a img {
+        height: 50px;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 1%;
+}
+
