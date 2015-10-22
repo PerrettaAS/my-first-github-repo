@@ -1,39 +1,9 @@
-header {
-        position: relative;
-        display: inline-block;
-        height: 75px;
-        width: 100%;
+header div img {
+        margin-left: 28%;
+        height: 2500%;
+        max-height: 55px;
+        width: 2500%;
+        max-width: 55px;
+        margin-top: 5%;
+        margin-bottom: 5%;
 }
-
-header nav {
-        background-color: #FFFFFF;
-        box-shadow: 0px 1px 5px #000000;
-}
-
-header nav ul {
-        margin-left: 33.33%;
-        width: 33.33%;
-}
-
-header nav ul li {
-        display: inline-block;
-        width: 18%;
-        margin-left: 1%;
-}
-
-header nav ul li#active {
-        background-color: #F3F3F3;
-}
-
-header nav ul li:hover {
-        background-color: #DDDDDD;
-}
-
-header nav ul li a img {
-        height: 50px;
-        width: 100%;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-left: 1%;
-}
-

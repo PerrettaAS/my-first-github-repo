@@ -1,24 +1,55 @@
 <!DOCTYPE html>
 <html lang='en'>
     <head>
-        <meta charset='UTF-8'>
-        <title> </title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel='stylesheet' href='css/reset.css'>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel='stylesheet' href='css/style.css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto|Open+Sans' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
-		<header>
-            <nav>
-                <ul id='navbar'>
-                    <li id='active'>
-                        <a href='index.html'><img src='images/navIcons/home.svg' alt='Home'></a>
-                    </li>
-                    <li>
-                        <a href='resume.html'><img src='images/navIcons/resume.svg' alt='Resume'></a>
-                    </li>
-                </ul>
-            </nav>
+        <header class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <nav>
+                        <div class="row">
+                            <ul id='navbar'>
+                                <li>
+                                    <a href='index.html'>
+                                        <div class="col-xs-1 col-md-1 col-xs-offset-2 col-md-offset-4" id='active'>
+                                            <img src="images/navIcons/home.svg">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='index.html'>
+                                        <div class="col-xs-1 col-md-1 col-xs-offset-1 col-md-offset-0" >
+                                            <img src="images/navIcons/resume.svg">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='index.html'>
+                                        <div class="col-xs-1 col-md-1 col-xs-offset-1 col-md-offset-0">
+                                            <img src="images/navIcons/projects.svg">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='index.html'>
+                                        <div class="col-xs-1 col-md-1 col-xs-offset-1 col-md-offset-0">
+                                            <img src="images/navIcons/contact.svg">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </header>
 	</body>
 </html>
