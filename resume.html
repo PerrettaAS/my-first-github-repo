@@ -1,104 +1,147 @@
 <!DOCTYPE html>
 <html lang='en'>
     <head>
-        <meta charset='UTF-8'>
-        <title>Scott Perretta</title>
+        <meta charset="utf-8">
         <link rel='stylesheet' href='css/reset.css'>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel='stylesheet' href='css/style.css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto|Open+Sans' rel='stylesheet' type='text/css'>
-        <script src='js/'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
-		<header>
-            <div id='avatar'> 
-		         <img src='images/avatar.png' alt='Scott Perretta'>
+        <header class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <nav>
+                        <div class="row">
+                            <ul id='navbar'>
+                                <li>
+                                    <a href='index.html'>
+                                        <div class="col-xs-1 col-md-1 col-xs-offset-4 col-md-offset-4">
+                                            <div class="centerBlock">
+                                                <h2>HOME</h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='resume.html'>
+                                        <div class="col-xs-1 col-md-1 col-xs-offset-0 col-md-offset-0"  id='active'>
+                                            <div class="centerBlock">
+                                                <h2>RESUME</h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='index.html'>
+                                        <div class="col-xs-1 col-md-1 col-xs-offset-0 col-md-offset-0">
+                                            <div class="centerBlock">
+                                                <h2>PROJECTS</h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='index.html'>
+                                        <div class="col-xs-1 col-md-1 col-xs-offset-0 col-md-offset-0">
+                                            <div class="centerBlock">
+                                                <h2>CONTACT</h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
-            <div id='first' class='name'>
-                <h1>SCOTT</h1>
-            </div>
-            <div id='last' class='name' >
-                <h1>PERRETTA</h1>
-            </div>
-		</header>
-        <nav>
-            <ul id='navbar'>
-                <li><a href='index.html'>HOME</a></li>
-                <li class='active'><a href='resume.html'>RESUME</a></li>
-                <li><a href='#'>ABOUT</a></li>
-                <li><a href='#'>GALLARY</a></li>
-                <li><a href='#'>CONTACT</a></li>
-            </ul>
-        </nav>
-        <div id="wrapper">
-            <div id='experience' class='content'>
-                <h1><center>WORK & EXPERIENCE</center><br></h1>
-                <h2>Robotics Programming ~ [December 2012 - June 2014]</h2>
-                <br>
-                <p>Member of the Southington FRC Robotics team and its programming subteam throughout junior and senior year of high school. FIRST is an international robotics competition in which teams of high-school students from across the world are given 6 weeks to design, build, and program a functional robot which is able to fulfill the unique and complex challenges specific to that year's game.</p>
-                <h2><br><br>Food Expoditor ~ Chili's Bar and Grill ~ [May 2014 - April 2015]</h2>
-                <br>
-                <p>A food expoditor is someone who works as QA for the kitchen. This job entails making sure all of the food that is prepared in the kitchen is properly made and safe to send out. The food expoditor is the middle man between cooks and the wait staff. This job involves high interation with customers as well.</p>
-            </div>
-            <div id='education' class='content'>
-                <h1><center>EDUCATION</center><br></h1>
-                <a src='www.ccsu.edu' id='ccsu' ><img src='images/ccsulogo.png'></a>
-                 <h2>Central Connecticut State University ~ [August 2014 - Present]</h2>
-                <br>
-                <h3>Major: Computer Science</h3>
-                <br>
-                <h3>GPA: 3.62</h3>
-                <br>
-                <h3>Coursework:</h3>
-                <br>
-                <ul>
-                    <li>- Data Structures (A)</li>
-                    <li>- Computer Science II (A)</li>
-                    <li>- Assembly Language (B+)</li>
-                    <li>- Management Information Systems (A)</li>
-                </ul>
-                <br>
-                <h3>Clubs & Programs:</h3>
-                <br>
-                <ul>
-                    <li>- Computer Science Club</li>
-                    <li>- Varsity Esports Club</li>
-                </ul>
-            </div>
-            <div id='skills' class='content'>
-                <h1><center>SKILLS</center><br></h1>
-                <h3>Programming:</h3>
-                <br>
-                <ul>
-                    <li>- Experienced in the Java programming language</li>
-                    <li>- Some experience with HTML, Python, CSS, JavaScript</li>
-                    <li>- Little experience with C and C#</li>
-                    <li>- Experienced with version control, specifically Git</li>
-                </ul>
-                <br>
-                <h3>General</h3>
-                <br>
-                <ul>
-                    <li>- Experienced with presenting to a group of peers</li>
-                    <li>- Experienced with team oriented projects and assignments</li>
-                </ul>
-            </div>
-            <div id='accomplishments' class='content'>
-                <h1><center>ACCOMPLISHMENTS</center><br></h1>
-                <h3>Honors:</h3>
-                <br>
-                <ul>
-                    <li>- Dean's List: 2 Semesters</li>
-                    <li>- Member of the Alpha Lamda Delta Honor Society</li>
-                    <li>- Member of the Golden Key International Honour Society</li>
-                </ul>
-                <br>
-                <h3>Professional Activities</h3>
-                <br>
-                <ul>
-                    <li>- Hartford Regional FRC Robotics Competition Winners - March 2013</li>
-                    <li>- Placed 5th in the National Marching Band Championships - November 2013</li>
-                </ul>
+        </header>
+        <div class="row">
+        <br/>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="well">
+                    <h4><center>WORK & EXPERIENCE</center><br></h4>
+                    <h5>Robotics Programming ~ [December 2012 - June 2014]</h5>
+                    <br>
+                    <p>Member of the Southington FRC Robotics team and its programming subteam throughout junior and senior year of high school. FIRST is an international robotics competition in which teams of high-school students from across the world are given 6 weeks to design, build, and program a functional robot which is able to fulfill the unique and complex challenges specific to that year's game.</p>
+                </div>
             </div>
         </div>
-	</body>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="well">
+                    <div id='education' class='content'>
+                        <h3><center>EDUCATION</center><br></h3>
+                        <h5>Central Connecticut State University ~ [August 2014 - Present]</h5>
+                        <h5>Major: Computer Science</h5>
+                        <h5>GPA: 3.63</h5>
+                        <h5>Coursework:</h5>
+                        <ul>
+                            <li>- Data Structures (A)</li>
+                            <li>- Computer Science II (A)</li>
+                            <li>- Assembly Language (B+)</li>
+                            <li>- Management Information Systems (A)</li>
+                        </ul>
+                        <br>
+                        <h5>Clubs & Programs:</h5>
+                        <br>
+                        <ul>
+                            <li>- Computer Science Club</li>
+                            <li>- Varsity Esports Club</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="well">
+                    <div id='skills' class='content'>
+                        <h2><center>SKILLS</center></h2>
+                        <h3>Programming:</h3>
+                        <br>
+                        <ul>
+                            <li>- Experienced in the Java programming language</li>
+                            <li>- Some experience with HTML, Python, CSS, JavaScript</li>
+                            <li>- Little experience with C and C#</li>
+                            <li>- Experienced with version control, specifically Git</li>
+                        </ul>
+                        <br>
+                        <h3>General</h3>
+                        <br>
+                        <ul>
+                            <li>- Experienced with presenting to a group of peers</li>
+                            <li>- Experienced with team oriented projects and assignments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="well">
+                    <div id='accomplishments' class='content'>
+                        <h2><center>ACCOMPLISHMENTS</center><br></h2>
+                        <h3>Honors:</h3>
+                        <br>
+                        <ul>
+                            <li>- Dean's List: 2 Semesters</li>
+                            <li>- Member of the Alpha Lamda Delta Honor Society</li>
+                            <li>- Member of the Golden Key International Honour Society</li>
+                        </ul>
+                        <br>
+                        <h3>Professional Activities</h3>
+                        <br>
+                        <ul>
+                            <li>- Hartford Regional FRC Robotics Competition Winners - March 2013</li>
+                            <li>- Placed 5th in the National Marching Band Championships - November 2013</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
