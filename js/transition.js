@@ -3,6 +3,8 @@ var id = " ";
 $('document').ready(function(){
 	id = ".gallary";
 	$(".resume-content").fadeOut();
+	$(".portfolio-content").fadeOut();
+	$(".contact-content").fadeOut();
 	$(".slideshow").cycle({
         timeout:5000,
         fx: 'fade',
@@ -15,6 +17,14 @@ $(".navbar .home").click(function () {
 
 $(".resume").click(function () {
 	fadeEffect(".resume-content");
+});
+
+$(".portfolio").click(function () {
+	fadeEffect(".portfolio-content");
+});
+
+$(".contact").click(function () {
+	fadeEffect(".contact-content");
 });
 
 function fadeEffect(newId) {
