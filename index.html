@@ -4,11 +4,16 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel='stylesheet' href='css/reset.css'>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel='stylesheet' href='css/style.css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.cycle2.js"></script>
     </head>
     <body>
         <header class="container-fluid">
@@ -18,8 +23,8 @@
                         <div class="row">
                             <ul class='navbar'>
                                 <li>
-                                    <a href='index.html'>
-                                        <div class="col-xs-1 col-md-1 col-xs-offset-2 col-md-offset-4 active nav-page">
+                                    <a>
+                                        <div class="col-xs-1 col-md-1 col-xs-offset-2 col-md-offset-4 nav-page home">
                                             <div class="centerBlock">
                                                 <h2>Home</h2>
                                             </div>
@@ -27,8 +32,8 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href='index.html'>
-                                        <div class="col-xs-1 col-md-1 col-xs-offset-2 col-md-offset-0 nav-page" >
+                                    <a>
+                                        <div class="col-xs-1 col-md-1 col-xs-offset-2 col-md-offset-0 nav-page resume" >
                                             <div class="centerBlock">
                                                 <h2>Resume</h2>
                                             </div>
@@ -75,11 +80,76 @@
                     </div>
                 </div>
             </div>
+            <div class="page-content">
+                <div class="col-md-8 gallary col-md-offset-3">
+                    <h4 class="gallary-title">W E L C O M E</h4>
+                    <div id="slideshowContainer"> 
+                        <div class="slideshow"> 
+                            <img src="images/gallary/image1.png"/> 
+                            <img src="images/gallary/image2.png"/> 
+                            <img src="images/gallary/image3.png"/> 
+                        </div> 
+                    </div>
+                    <p class="gallary-subtext">This slideshow presents a visualization of some of the projects I've worked on in the past.</p>
+                </div>
+                <div class="col-md-8 resume-content col-md-offset-3"> 
+                    <div class="resume-text-box">
+                        <h4>Education</h4>
+                        <h5>Central Connecticut State University ~ [August 2014 - Present]</h5>
+                        <h5>Major: Computer Science</h5>
+                        <h5>GPA: 3.63</h5>
+                        <h5>Coursework:</h5>
+                        <ul>
+                            <li>- Data Structures (A)</li>
+                            <li>- Computer Science II (A)</li>
+                            <li>- Assembly Language (B+)</li>
+                            <li>- Management Information Systems (A)</li>
+                        </ul>
+                    </div>
+                    <div class="resume-text-box">
+                        <h4>Work & Experience</h4>
+                        <h5>A100 Software Engineer Apprentice ~ [Present]</h5>
+                        <br>
+                        <p>A100 is an apprenticeship program for aspiring software developers designed to accelerate the apprentices software development career.</p>
+                        <h5>Robotics Programming ~ [December 2012 - June 2014]</h5>
+                        <br>
+                        <p>Member of the Southington FRC Robotics team and its programming subteam throughout junior and senior year of high school. FIRST is an international robotics competition in which teams are given 6 weeks to design, build, and program a functional robot to fulfill the unique and complex challenges specific to that year's game.</p>
+                    </div>
+                    <div class="resume-text-box">
+                        <h4>Accomplishments</h4>
+                        <h5>Honors:</h5>
+                        <ul>
+                            <li>- Dean's List: 2 Semesters</li>
+                            <li>- Member of the Alpha Lamda Delta Honor Society</li>
+                            <li>- Member of the Golden Key International Honour Society</li>
+                        </ul>
+                        <h5>Professional Activities</h5>
+                        <ul>
+                            <li>- Hartford Regional FRC Robotics Competition Winners - March 2013</li>
+                            <li>- Placed 5th in the National Marching Band Championships - November 2013</li>
+                        </ul>
+                    </div>
+                    <div class="resume-text-box">
+                        <h4>Skills & Abilities</h4>
+                        <h5>Programming:</h5>
+                        <ul>
+                            <li>- Experienced in the Java programming language</li>
+                            <li>- Some experience with HTML, Python, CSS, JavaScript</li>
+                            <li>- Little experience with C and C#</li>
+                            <li>- Experienced with version control, specifically Git</li>
+                        </ul>
+                        <h5>General</h5>
+                        <ul>
+                            <li>- Experienced with presenting to a group of peers</li>
+                            <li>- Experienced with team oriented projects and assignments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 	</body>
 
     <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/transition.js"></script>
 
 </html>

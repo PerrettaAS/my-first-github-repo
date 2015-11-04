@@ -9,7 +9,7 @@ html, body {
 }
 
 .container-fluid, .content-pane {
-	background-color: rgba(30, 30, 30, 0.85);
+	background-color: rgba(30, 30, 30, .8);
 }
 
 /* 
@@ -21,6 +21,11 @@ header div.row div.col-md-12 {
 	box-shadow: 0px 1px 5px #000000;
 	max-height: 5vh;
 }
+
+.navbar a {
+	cursor: pointer;
+}
+
 .navbar h2 {
     font-size: 1vw;
     margin-top: 1.5vh;
@@ -29,7 +34,8 @@ header div.row div.col-md-12 {
 }
 
 .navbar .active {
-	box-shadow: 0px 2px 2px #FFFFFF;
+	font-style: italic;
+	background-color: #232323;
 }
 
 .nav-page:hover {
@@ -41,6 +47,7 @@ header div.row div.col-md-12 {
  * Sidebar css code
  */
 .sidebar {
+	position: relative;
 	margin-left: 2vw;
 	background-color: rgba(0, 0, 0, .7);
 	margin-top: 2.5vh;
@@ -49,6 +56,7 @@ header div.row div.col-md-12 {
 	box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
 	text-align: center;
 	color: #FFFFFF;
+	z-index: 4;
 }
 
 .picture {
@@ -108,4 +116,90 @@ header div.row div.col-md-12 {
 	margin-top: .75vh;
 	font-size: .9vw;
 	line-height: 3vh;
+}
+
+/*
+ * Gallary css
+ */
+.page-content {
+	position: relative;
+	min-height: 90vh;
+	min-width: 70vw;
+	margin-top: 2.5vh;
+	margin-left: 3vw;
+}
+
+.gallary {
+	position: absolute;
+	min-height: 90vh;
+	min-width: 70vw;
+	background-color: rgba(0, 0, 0, 0.8);
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.resume-content {
+	position: absolute;
+	min-height: 90vh;
+	min-width: 70vw;
+	background-color: rgba(0, 0, 0, 0.8);
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+	visibility: hidden;
+}
+
+.gallary-title {
+	margin-top: 3vh;
+	min-width: 100%;
+	color: #FFFFFF;
+	font-size: 3vw;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 3vh;
+}
+
+.gallary-subtext {
+	margin-top: 3vh;
+	color: #FFFFFF;
+	font-size: 1vw;
+	font-style: italic;
+	text-align: center;
+}
+
+.slideshow img {
+	margin-left: 5%;
+	height: 100%;
+	width: 90%;
+	border-color: rgba(200, 200, , 0.8);
+	border-style: inset;
+	border-width: 2px;
+}
+
+.resume-text-box {
+	float: left;
+	position: relative;
+	margin-left: 2.5%;
+	display: inline-block;
+	min-height: 40vh;
+	max-height: 40vh;
+	min-width: 45%;
+	max-width: 45%;
+	color: #FFFFFF;
+	margin-top: 2.5%;
+}
+
+.resume-text-box h4 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 2vw;
+	margin-bottom: 5vh;
+}
+
+.resume-text-box h5 {
+	margin-top: 2vh;
+	font-weight: bold;
+	font-size: 1vw;
+}
+
+.resume-text-box p {
+	font-size: .8vw;
+	font-style: italic;
 }
