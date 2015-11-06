@@ -127,6 +127,7 @@ header div.row div.col-md-12 {
 	min-width: 70vw;
 	margin-top: 2.5vh;
 	margin-left: 3vw;
+	color: #FFFFFF;
 }
 
 .gallary {
@@ -137,7 +138,7 @@ header div.row div.col-md-12 {
 	box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
 }
 
-.resume-content {
+.resume-content, .portfolio-content, .contact-content {
 	position: absolute;
 	min-height: 90vh;
 	min-width: 70vw;
@@ -204,38 +205,18 @@ header div.row div.col-md-12 {
 	font-style: italic;
 }
 
-.portfolio-content {
-	position: absolute;
-	min-height: 90vh;
-	min-width: 70vw;
-	background-color: rgba(0, 0, 0, 0.8);
-	box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
-	color: #FFFFFF;
-	visibility: hidden;
-}
-
-.portfolio-content h4 {
-	margin-top: 4vh;
-	text-align: center;
-	font-weight: bold;
-	font-size: 2vw;
-	margin-bottom: 5vh;
-}
-
-.contact-content {
-	position: absolute;
-	min-height: 90vh;
-	min-width: 70vw;
-	background-color: rgba(0, 0, 0, 0.8);
-	box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
-	color: #FFFFFF;
-	visibility: hidden;
-}
-
-.contact-content h4 {
+.portfolio-content, .contact-content h4 {
 	margin-top: 4vh;
 	text-align: center;
 	font-weight: bold;
 	font-size: 2em;
 	margin-bottom: 5vh;
+}
+
+.portfolio-subtext {
+	font-size: .5em;
+}
+
+.portfolio-title {
+	font-size: 1em;
 }
