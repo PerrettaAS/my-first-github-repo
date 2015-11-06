@@ -27,7 +27,7 @@ header div.row div.col-md-12 {
 }
 
 .navbar h2 {
-    font-size: 1vw;
+    font-size: 1em;
     margin-top: 1.5vh;
     text-align: center;
 	color: #FFFFFF;
@@ -87,7 +87,7 @@ header div.row div.col-md-12 {
 
 .sidebar h2 {
 	margin-top: 3vh;
-	font-size: 1.8vw;
+	font-size: 1.8em;
 	font-weight: bold;
 }
 
@@ -108,13 +108,13 @@ header div.row div.col-md-12 {
 }
 
 .about-me h3 {
-	font-size: 1.3vw;
+	font-size: 1.3em;
 }
 
 .about-me p {
 	text-align: justify;
 	margin-top: .75vh;
-	font-size: .9vw;
+	font-size: .9em;
 	line-height: 3vh;
 }
 
@@ -150,7 +150,7 @@ header div.row div.col-md-12 {
 	margin-top: 3vh;
 	min-width: 100%;
 	color: #FFFFFF;
-	font-size: 3vw;
+	font-size: 3em;
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 3vh;
@@ -159,7 +159,7 @@ header div.row div.col-md-12 {
 .gallary-subtext {
 	margin-top: 3vh;
 	color: #FFFFFF;
-	font-size: 1vw;
+	font-size: 1em;
 	font-style: italic;
 	text-align: center;
 }
@@ -189,18 +189,18 @@ header div.row div.col-md-12 {
 .resume-text-box h4 {
 	text-align: center;
 	font-weight: bold;
-	font-size: 2vw;
+	font-size: 2em;
 	margin-bottom: 5vh;
 }
 
 .resume-text-box h5 {
 	margin-top: 2vh;
 	font-weight: bold;
-	font-size: 1vw;
+	font-size: 1em;
 }
 
-.resume-text-box p {
-	font-size: .8vw;
+.resume-text-box p, .resume-text-box li {
+	font-size: .8em;
 	font-style: italic;
 }
 
@@ -236,6 +236,6 @@ header div.row div.col-md-12 {
 	margin-top: 4vh;
 	text-align: center;
 	font-weight: bold;
-	font-size: 2vw;
+	font-size: 2em;
 	margin-bottom: 5vh;
 }
