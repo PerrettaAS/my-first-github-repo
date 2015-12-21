@@ -3,18 +3,66 @@ html, body {
     font-family: "Lato", sans-serif;
 }
 
-/* Some helper classes removing gutter from bootstrap divs. */
-.row.no-gutters {
-	margin-right: 0;
-	margin-left: 0;
+@media screen and (max-width:599px) {
+
+	.header-container {
+		margin: 0px;
+		padding: .75vh 2vw .75vh 2vw;
+		width: 100vw;
+		height: 25vh;
+	}
+
+	.logo {
+		float: left;
+		position: relative;
+		width: 96vw;
+		margin-top: 0px;
+		height: auto;
+		display: inline-block;
+	}
+
+	.avatar {
+		float: left;
+	}
+
+	.logo .profile-image {
+		vertical-align: middle;
+		width: 22vh;
+		height: 25vh;
+		-moz-box-shadow: 2px 2px 2px #000000;
+	    -webkit-box-shadow: 2px 2px 2px #000000;
+	    box-shadow: 2px 2px 2px #000000;
+	    -moz-border-radius: 2px;
+	    -webkit-border-radius: 2px;
+	}
+
+	.avatar-details {
+		display: block;
+		text-align: center;
+	}
+
+	.logo-title {
+		font-size: 6vh;
+		margin-bottom: .8vh;
+	}
+
+	.avatar-details i {
+		font-size: 2em;
+	}
+
+	.avatar-details-container {
+		margin-top: 3.5vh;
+	}
+
 }
 
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-	padding-right: 0;
-	padding-left: 0;
+@media screen and (min-width:600px) {
+
+	.header-container {
+		width: 100vw;
+		height: 15vh;
+		background-color: #352356;
+	}
+
 }
 
-.logo {
-	background-color: #000000;
-}
