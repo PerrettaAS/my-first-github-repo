@@ -3,11 +3,40 @@ html, body {
     font-family: "Lato", sans-serif;
 }
 
+.fa-github-square {
+	color: #000000;
+}
+
+.fa-github-square:hover {
+	color: #888888;
+}
+
+.fa-linkedin-square {
+	color: #0077B5;
+}
+
+.fa-linkedin-square:hover {
+	color: #66CCF5;
+}
+
+
+.fa-facebook-square {
+	color: #3b5998;
+}
+
+.fa-facebook-square:hover {
+	color: #6bA9F8;
+}
+
+
 @media screen and (max-width:599px) {
 
 	.header-container {
 		margin: 0px;
-		padding: .75vh 2vw .75vh 2vw;
+		padding-left: 2vw;
+		padding-right: 0vw;
+		padding-top: .75vh;
+		padding-bottom: .75vh;
 		width: 100vw;
 		height: 25vh;
 	}
@@ -39,19 +68,23 @@ html, body {
 	.avatar-details {
 		display: block;
 		text-align: center;
+		margin-left: 1vw;
 	}
 
 	.logo-title {
-		font-size: 6vh;
-		margin-bottom: .8vh;
+		font-size: 4.75vh;
+		margin-bottom: 3vh;
 	}
 
 	.avatar-details i {
-		font-size: 2em;
+		font-size: 5vh;
+		margin-left: 1vw;
+		margin-right: 1vw;
 	}
 
 	.avatar-details-container {
-		margin-top: 3.5vh;
+		margin-top: 6.5vh;
+		margin-left: 23vh;
 	}
 
 }
