@@ -28,6 +28,32 @@ html, body {
 	color: #6bA9F8;
 }
 
+.header-container {
+	background-color: #FFFFFF;
+}
+
+.nav-bar {
+	width: 100vw;
+	background-color: #0099FF;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.nav-bar-links {
+	display: inline-block;
+	list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar-links li {
+	float: left;
+	
+}
+
+
 
 @media screen and (max-width:599px) {
 
@@ -85,6 +111,26 @@ html, body {
 	.avatar-details-container {
 		margin-top: 6.5vh;
 		margin-left: 23vh;
+	}
+
+	.nav-bar {
+		margin-top: .75vh;
+		min-height: 5vh;
+		-moz-box-shadow: 0px .25px .25px #000000;
+	    -webkit-box-shadow: 0px .25px .25px #000000;
+	    box-shadow: 0px .25px .25px #000000;
+	    vertical-align: middle;
+	}
+
+	.nav-bar-links {
+		line-height: 6vh;
+		margin-top: .4vh;
+	}
+
+	.nav-bar-links li {
+		margin-left: 9vw;
+		margin-right: 9vw;
+		font-weight: 400;
 	}
 
 }
