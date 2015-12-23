@@ -45,12 +45,25 @@ html, body {
 
 .nav-bar-links li {
 	float: left;
-	
 }
 
+.active {
+	border-bottom: thin solid rgba(250, 250, 250, 1);
+}
 
+.content-block-header {
+	padding-bottom: 1vh;
+	border-bottom: thin double rgba(60, 60, 60, 0.2);
+	font-size: 2.33vh;
+}
 
-@media screen and (max-width:599px) {
+.content-block-content {
+	margin-top: 1vh;
+	font-size: 1.6vh;
+	line-height: 2.25vh;
+}
+
+@media screen and (max-width:769px) {
 
 	.header-container {
 		margin: 0px;
@@ -137,14 +150,33 @@ html, body {
 		font-weight: 400;
 	}
 
+	.content-container {
+		width: 96.35vw;
+		margin-left: 0px;
+		margin-right: auto;
+		margin-top: 2vh;
+	}
+
+	.content-block {
+		width: 100%;
+		background-color: #FFFFFF;
+		-moz-box-shadow: .1px .1px .1px #000000;
+	    -webkit-box-shadow: .1px .1px .1px #000000;
+	    box-shadow: .1px .1px .1px #000000;
+	    padding-left: 1.5vw;
+	    padding-right: 2vw;
+	    padding-top: 1.25vh;
+	    padding-bottom: 1.25vh;
+	}
+
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:769px) {
 
 	.header-container {
 		margin-left: auto;
 		margin-right: auto;
-		padding-top: 1vh;
+		padding-top: 1.25vh;
 		padding-bottom: .75vh;
 		width: 33.33vw;
 		height: 22vh;
@@ -167,9 +199,9 @@ html, body {
 	.logo .profile-image {
 		width: 19vh;
 		height: 22vh;
-		-moz-box-shadow: 2px 2px 2px #000000;
-	    -webkit-box-shadow: 2px 2px 2px #000000;
-	    box-shadow: 2px 2px 2px #000000;
+		-moz-box-shadow: .5px .5px .5px #000000;
+	    -webkit-box-shadow: .5px .5px .5px #000000;
+	    box-shadow: .5px .5px .5px #000000;
 	    -moz-border-radius: 2px;
 	    -webkit-border-radius: 2px;
 	}
@@ -196,8 +228,8 @@ html, body {
 
 	.avatar-details i {
 		font-size: 4.75vh;
-		margin-left: .5vw;
-		margin-right: .5vw;
+		margin-left: .33vw;
+		margin-right: .33vw;
 	}
 
 	.avatar-details-container {
@@ -224,8 +256,8 @@ html, body {
 		padding-right: 10px;
 		margin-top: .5vh;
 		margin-bottom: .5vh;
-		margin-left: 1.175vw;
-		margin-right: 1.175vw;
+		margin-left: 1.25vw;
+		margin-right: 1.25vw;
 		font-weight: 400;
 		cursor: pointer;
 	}
@@ -237,6 +269,28 @@ html, body {
 	.nav-bar-links .contact {
 		margin-right: -3vw;
 	}
+
+	.content-container {
+		width: 35vw;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 2vh;
+	}
+
+	.content-block {
+		width: 100%;
+		background-color: #FFFFFF;
+		-moz-box-shadow: .1px .1px .1px #000000;
+	    -webkit-box-shadow: .1px .1px .1px #000000;
+	    box-shadow: .1px .1px .1px #000000;
+	    -moz-border-radius: 2px;
+	    -webkit-border-radius: 2px;
+	    padding-left: .75vw;
+	    padding-right: .75vw;
+	    padding-top: 1.25vh;
+	    padding-bottom: 1.25vh;
+	}
+	
 }
 
 /* Effects from Hover.css */
