@@ -29,7 +29,7 @@ html, body {
 }
 
 .nav-bar {
-	width: 100vw;
+	width: 100%;
 	background-color: #0099FF;
 	color: #FFFFFF;
 	text-align: center;
@@ -71,14 +71,18 @@ html, body {
 		padding-right: 0vw;
 		padding-top: .75vh;
 		padding-bottom: .75vh;
-		width: 100vw;
+		width: 100%;
 		height: 25vh;
+	}
+
+	.nav-bar {
+		width: 103.5vw;
 	}
 
 	.logo {
 		float: left;
 		position: relative;
-		width: 96vw;
+		width: 100%;
 		margin-top: 0px;
 		height: auto;
 		display: inline-block;
@@ -110,7 +114,7 @@ html, body {
 		padding-top: 2vh;
 		padding-bottom: 2vh;
 		margin-top: -2vh;
-		margin-bottom: 1vh;
+		margin-bottom: 1.75vh;
 		border-style: solid;
 		border-bottom: thin dashed rgba(60, 60, 60, 0.6);
 	}
@@ -151,9 +155,7 @@ html, body {
 	}
 
 	.content-container {
-		width: 96.35vw;
-		margin-left: 0px;
-		margin-right: auto;
+		width: 100%;
 		margin-top: 2vh;
 	}
 
@@ -290,7 +292,7 @@ html, body {
 	    padding-top: 1.25vh;
 	    padding-bottom: 1.25vh;
 	}
-	
+
 }
 
 /* Effects from Hover.css */
@@ -301,7 +303,6 @@ html, body {
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
