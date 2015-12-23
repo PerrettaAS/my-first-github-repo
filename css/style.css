@@ -40,7 +40,6 @@ html, body {
 	list-style-type: none;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -95,7 +94,12 @@ html, body {
 
 	.logo-title {
 		font-size: 4.75vh;
-		margin-bottom: 3vh;
+		padding-top: 2vh;
+		padding-bottom: 2vh;
+		margin-top: -2vh;
+		margin-bottom: 1vh;
+		border-style: solid;
+		border-bottom: thin dashed rgba(60, 60, 60, 0.6);
 	}
 
 	.avatar-details i {
@@ -128,8 +132,8 @@ html, body {
 		padding-right: 10px;
 		margin-top: .5vh;
 		margin-bottom: .5vh;
-		margin-left: 7.5vw;
-		margin-right: 7.5vw;
+		margin-left: .75vw;
+		margin-right: .75vw;
 		font-weight: 400;
 	}
 
@@ -138,11 +142,101 @@ html, body {
 @media screen and (min-width:600px) {
 
 	.header-container {
-		width: 100vw;
-		height: 15vh;
-		background-color: #352356;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 1vh;
+		padding-bottom: .75vh;
+		width: 33.33vw;
+		height: 22vh;
 	}
 
+	.logo {
+		margin-left: auto;
+		margin-right: auto;
+		float: left;
+		position: relative;
+		height: auto;
+		display: inline-block;
+	}
+
+	.avatar {
+		float: left;
+		margin-left: 3.5vw;
+	}
+
+	.logo .profile-image {
+		width: 19vh;
+		height: 22vh;
+		-moz-box-shadow: 2px 2px 2px #000000;
+	    -webkit-box-shadow: 2px 2px 2px #000000;
+	    box-shadow: 2px 2px 2px #000000;
+	    -moz-border-radius: 2px;
+	    -webkit-border-radius: 2px;
+	}
+
+	.avatar-details {
+		display: block;
+		text-align: center;
+		margin-left: 3vw;
+	}
+
+	.logo-title {
+		font-size: 2.25vw;
+		border-style: solid;
+		padding-top: 2vh;
+		padding-bottom: 2vh;
+		padding-right: 1vw;
+		padding-left: 1vw;
+		margin-top: -2vh;
+		margin-right: -1vw;
+		margin-left: -1vw;
+		margin-bottom: 2vh;
+    	border-bottom: thin dashed rgba(60, 60, 60, 0.6);
+	}
+
+	.avatar-details i {
+		font-size: 4.75vh;
+		margin-left: .5vw;
+		margin-right: .5vw;
+	}
+
+	.avatar-details-container {
+		margin-top: 5.5vh;
+		margin-left: 13vw;
+	}
+
+	.nav-bar {
+		margin-top: .7vh;
+		-moz-box-shadow: 0px .5px .5px #000000;
+	    -webkit-box-shadow: 0px .5px .5px #000000;
+	    box-shadow: 0px .5px .5px #000000;
+	}
+
+	.nav-bar-links {
+		width: 37vw;
+		line-height: 3.5vh;
+		margin-top: .3vh;
+		font-size: 1.25vw;
+	}
+
+	.nav-bar-links li {
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-top: .5vh;
+		margin-bottom: .5vh;
+		margin-left: 1.175vw;
+		margin-right: 1.175vw;
+		font-weight: 400;
+		cursor: pointer;
+	}
+
+	.nav-bar-links .home {
+		margin-left: 3vw;
+	}
+
+	.nav-bar-links .contact {
+		margin-right: -3vw;
+	}
 }
 
 /* Effects from Hover.css */
@@ -159,6 +253,8 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   background: #FFFFFF;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -188,4 +284,40 @@ html, body {
 .hvr-rectangle-in:hover:before, .hvr-rectangle-in:focus:before, .hvr-rectangle-in:active:before {
   -webkit-transform: scale(0);
   transform: scale(0);
+}
+
+/* Pop */
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
