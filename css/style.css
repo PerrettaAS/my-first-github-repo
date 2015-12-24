@@ -1,6 +1,8 @@
 html, body {
     background-color: #F5F5F5;
     font-family: "Lato", sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .fa-github-square {
@@ -181,6 +183,10 @@ html, body {
 		text-indent: 1.5vh;
 	}
 
+	div.portfolio-content .picture-block {
+		display: none;
+	}
+
 }
 
 @media screen and (min-width:769px) {
@@ -190,7 +196,8 @@ html, body {
 		margin-right: auto;
 		padding-top: 1.25vh;
 		padding-bottom: .75vh;
-		width: 33.33vw;
+		max-width: 33.33vw;
+		min-width: 33.33vw;
 		height: 22vh;
 	}
 
@@ -257,7 +264,8 @@ html, body {
 	}
 
 	.nav-bar-links {
-		width: 37vw;
+		max-width: 37vw;
+		min-width: 37vw;
 		line-height: 3.5vh;
 		margin-top: .3vh;
 		font-size: 1.25vw;
@@ -304,6 +312,38 @@ html, body {
 	    margin-bottom: 1.75vh;
 	}
 
+	.portfolio-content { 
+		width: 60vw;
+		margin-left: 25vw;
+		margin-right: auto;
+		margin-top: 2vh;
+	}
+
+	.portfolio-content .content-block { 
+		float: left;
+		width: 30vw;
+		height: 17.5vw;
+		margin-left: .25vw;
+		margin-right: .25vw;
+	}
+
+	#a-star-pic {
+		min-width: 16vw;
+		max-width: 16vw;
+		height: auto;
+	}
+
+	div.portfolio-content .picture-block {
+		min-width: 16vw;
+		max-width: 16vw;
+	}
+
+	.picture-caption {
+		margin-top: .75vh;
+		font-size: .75vw;
+		text-align: center;
+	}
+
 }
 
 /* Effects from Hover.css */
@@ -335,8 +375,6 @@ html, body {
   right: 0;
   bottom: 0;
   background: #0099FF;
-  -webkit-transform: scale(1);
-  transform: scale(1);
   -webkit-transition-property: transform;
   transition-property: transform;
   -webkit-transition-duration: 0.3s;
