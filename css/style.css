@@ -170,6 +170,7 @@ html, body {
 	    padding-right: 2vw;
 	    padding-top: 1.25vh;
 	    padding-bottom: 1.25vh;
+	    margin-bottom: 1.75vh;
 	}
 
 	.content-block-content {
@@ -300,6 +301,7 @@ html, body {
 	    padding-right: .75vw;
 	    padding-top: 1.25vh;
 	    padding-bottom: 1.25vh;
+	    margin-bottom: 1.75vh;
 	}
 
 }
