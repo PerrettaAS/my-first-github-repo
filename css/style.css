@@ -62,7 +62,7 @@ html, body {
 .content-block-content {
 	text-indent: 1vw;
 	margin-top: .75vh;
-	font-size: 1.6vh;
+	font-size: 55%;
 	line-height: 2.25vh;
 }
 
@@ -342,6 +342,10 @@ html, body {
 		margin-top: .75vh;
 		font-size: .75vw;
 		text-align: center;
+	}
+
+	.content-block-content {
+		font-size: .8vw;
 	}
 
 }
