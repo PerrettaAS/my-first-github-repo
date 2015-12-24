@@ -58,7 +58,8 @@ html, body {
 }
 
 .content-block-content {
-	margin-top: 1vh;
+	text-indent: 1vw;
+	margin-top: .75vh;
 	font-size: 1.6vh;
 	line-height: 2.25vh;
 }
@@ -173,6 +174,10 @@ html, body {
 
 	.content-block-content {
 		padding-right: 2vw;
+	}
+
+	.content-block-content {
+		text-indent: 1.5vh;
 	}
 
 }
