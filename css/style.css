@@ -322,7 +322,7 @@ html, body {
 	.portfolio-content .content-block { 
 		float: left;
 		width: 30vw;
-		height: 17.5vw;
+		min-height: 17.5vw;
 		margin-left: .25vw;
 		margin-right: .25vw;
 	}
