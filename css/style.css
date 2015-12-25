@@ -2,7 +2,10 @@ html, body {
     background-color: #F5F5F5;
     font-family: "Lato", sans-serif;
     overflow-x: hidden;
-    overflow-y: scroll;
+}
+
+html {
+	overflow-y: scroll;
 }
 
 .fa-github-square {
@@ -281,6 +284,7 @@ html, body {
 		line-height: 3.5vh;
 		margin-top: .3vh;
 		font-size: 1.25vw;
+		margin-left: 3vw;
 	}
 
 	.nav-bar-links li {
