@@ -1,5 +1,7 @@
 $(document).ready(function() {
 	$(".portfolio-content").hide();
+	$(".resume-content").hide();
+	$(".contact-content").hide();
 	$(".home-content .content-block").hide().each(function(i) {
 		$(this).delay(i * 250).fadeIn(800);
 	});
