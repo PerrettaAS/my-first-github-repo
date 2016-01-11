@@ -202,6 +202,23 @@ html {
 		display: none;
 	}
 
+	.a-star-pic {
+		min-width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+
+	div.portfolio-content .picture-block {
+		min-width: 96.8%;
+		max-width: 96.8%;
+	}
+
+	.picture-caption {
+		margin-top: .75vh;
+		font-size: 1.5vw;
+		text-align: center;
+	}
+
 }
 
 @media screen and (min-width:769px) {
@@ -343,7 +360,7 @@ html {
 		margin-right: .25vw;
 	}
 
-	#a-star-pic {
+	.a-star-pic {
 		min-width: 16vw;
 		max-width: 16vw;
 		height: auto;
