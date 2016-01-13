@@ -33,6 +33,14 @@ html {
 	color: #6bA9F8;
 }
 
+.fa-file-text {
+	color: #24C416;
+}
+
+.fa-file-text:hover {
+	color: #35E636;
+}
+
 .nav-bar {
 	width: 100%;
 	background-color: #0099FF;
@@ -139,6 +147,12 @@ html {
 
 	.avatar-details i {
 		font-size: 5vh;
+		margin-left: 1vw;
+		margin-right: 1vw;
+	}
+
+	.avatar-details .fa-file-text {
+		font-size: 4.25vh;
 		margin-left: 1vw;
 		margin-right: 1vw;
 	}
@@ -281,6 +295,10 @@ html {
 		font-size: 4.75vh;
 		margin-left: .33vw;
 		margin-right: .33vw;
+	}
+
+	.avatar-details .fa-file-text {
+		font-size: 4vh;
 	}
 
 	.avatar-details-container {
