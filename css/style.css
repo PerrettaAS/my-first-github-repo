@@ -1,7 +1,8 @@
 html, body {
-    background-color: #F5F5F5;
+    background: #EFEFEF;  /* fallback for old browsers */
     font-family: "Lato", sans-serif;
-    overflow: hidden;
+	color: #000000;
+	overflow: hidden;
 }
 
 .fa-github-square {
@@ -71,17 +72,103 @@ html, body {
 
 .container {
 	min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     text-align: center;
-	background-color: #EEEEEE;
+	padding: 15px;
 }
 
 .content-container {
     position:fixed;
     top: 50%;
     left: 50%;
-    width:30em;
+    width:35em;
     height:18em;
     margin-top: -9em; /*set to a negative number 1/2 of your height*/
     margin-left: -15em; /*set to a negative number 1/2 of your width*/
 }
+
+.name {
+	font-size: 3.5em;
+	margin: 20px;
+}
+
+i.fa {
+	font-size: 3em;
+	margin: 19px;
+}
+
+i.fa-file-text {
+	font-size: 2.6em;
+	margin: 19px;
+}
+
+hr {
+  border:none;
+  border-top:1px dotted #000;
+  color:#fff;
+  background-color:#fff;
+  height:1px;
+  width:100%;
+}
+
+/* Fade effect */ 
+.fade-in {
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #000000; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 20px auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 8s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #000000; }
+}
+
