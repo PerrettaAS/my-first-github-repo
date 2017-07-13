@@ -11,119 +11,22 @@
         <link rel='stylesheet' href='css/style.css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Playfair+Display|Roboto' rel='stylesheet' type='text/css'>
-
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="js/jquery.cycle2.js"></script>
     </head>
     <body>
-        <header class="header-container">
-            <div class="logo">
-                <div class="avatar">
-                    <img src="./images/profile.png" class="profile-image">
+        <div class="container fade-in">
+            <div class="content-container">
+                <div class="content">
+                    <h1 class="name">Scott Perretta</h1>
+                    <h2 class="typewriter">Hello, World! My name is Scott and I'm a Software Engineer.</h2>
+                    <hr>
+                    <a title="Github" href="https://github.com/scott-perretta/" target="_blank"><i class="hvr-pop fa fa-github-square"></i></a>
+                    <a title="Linkedin" href="https://www.linkedin.com/in/scott-perretta-240a79b1" target="_blank"><i class="hvr-pop fa fa-linkedin-square"></i></a>
+                    <a title="Facebook" href="https://www.facebook.com/scott.perretta.7?fref=nf&pnref=story" target="_blank"><i class="hvr-pop fa fa-facebook-square"></i></a>
+                    <a title="Resume" href="./resume.pdf" target="_blank"><i class="hvr-pop fa fa-file-text"></i></a>
                 </div>
-                <div class="avatar-details">
-                    <div class="avatar-details-container">
-                        <h1 class="logo-title">Scott Perretta</h1>
-                        <a title="Github" href="https://github.com/PerrettaAS/" target="_blank"><i class="hvr-pop fa fa-github-square"></i></a>
-                        <a title="Linkedin" href="https://www.linkedin.com/in/scott-perretta-240a79b1" target="_blank"><i class="hvr-pop fa fa-linkedin-square"></i></a>
-                        <a title="Facebook" href="https://www.facebook.com/scott.perretta.7?fref=nf&pnref=story" target="_blank"><i class="hvr-pop fa fa-facebook-square"></i></a>
-                        <a title="Resume" href="./resume.pdf" target="_blank"><i class="hvr-pop fa fa-file-text"></i></a>
-                    </div>
-                </div>  
-            </div>
-        </header>
-        <nav class="nav-bar">
-            <div class="nav-bar-table">
-                <ul class="nav-bar-links">
-                    <li class="active hvr-rectangle-in" id="home">Home</li>
-                    <li class="hvr-rectangle-in" id="portfolio">Portfolio</li>
-                    <li class="hvr-rectangle-in" id="resume">Resume</li>
-                    <li class="hvr-rectangle-in" id="contact">Contact</li>
-                </ul>
-            </div>
-        </nav>
-        <div class="content-container home-content">
-            <div class="content-block">
-                <h1 class="content-block-header">Welcome!</h1>
-                <p class="content-block-content">Hello, and welcome to my portfolio website! I've developed this website using the languages, HTML, CSS, and Javascript in sublime text. The libraries I used to develop some of the content on this site are Hover.css and jQuery. I will be adding more content to the website as I work on more personal projects.</p>
-            </div>
-            <div class="content-block">
-                <h1 class="content-block-header">About</h1>
-                <p class="content-block-content">I am an aspiring software engineer with great interests in the field of artificial intelligence. I am a second-year Computer Science major at Central Connecticut State University with a minor in Management Information Systems. I've always had a passion for programming and creating a product from conception to production.</p>
-                <p class="content-block-content">I began programming when I was around 14, developing simple command-line applications. Throughout high school, I worked with the Arduino microprocessor using C and C++, or on small game projects in Java. The games I would create were usually emulations of pre-existing games like snake or flappybird. After high school, I had a strong interest in AI research and I'd watch documentaries and read papers on various topics in this field. I plan on taking an AI course next year at CCSU and hope to expand my knowledge in this field.</p>
-                <p class="content-block-content">I currently work as a software engineering apprentice in the A100 program. The A100 program is an apprenticeship program for aspiring software developers. The program mentors work with college students and graduates eager to hone their skills in the craft of software development. Throughout this program, we work on three individual projects, and one venture project. Over the course of the venture project, you work in two sprints to take a startup companies' product idea, and develop a fully functional product. As the scrum master of this project, I've gained a lot of experience with working in a development team and facilitating the communication with the team members and the product owner.</p>
-            </div>
-        </div>
-        <div class="portfolio-content">
-            <div class="content-block">
-                <h1 class="content-block-header">A* Search Algorithm Research Project</h1>
-                <p class="content-block-content">While taking Data Structures at Central Connecticut State University, I was given an assignment to research a graph algorithm of my choice. The task was to chose, implement, and present the graph algorithm. After some research, the A* graph search algorithm caught my eye, and I decided to complete my project using it.</p>
-                <p class="content-block-content">The A* search algorithm is a graph search algorithm that determines an efficient traversal path from one node to another. It combines elements of Dijkstra's algorithm and greedy best-first-search to efficiently determine the shortest path. For my implementation, I created a 2D tile-map game where a character can walk on any grassy terrain, while prohibited to walk on any rocky terrain. The implementation of the algorithm allowed the player to click on any grassy tile, and take the shortest path to get there. I chose this type of implementation because this algorithm is popular with different tile-map based games. You can find this project on my github <a target="_blank" href="https://github.com/PerrettaAS/a-star-pathfinding-game">here</a>.</p>
-            </div>
-            <div class="content-block picture-block">
-                <img src="./images/portfolio/AStar.png" class="a-star-pic">
-                <p class="picture-caption">Image of the tile-based game that I created to demonstrate the functionality of the A* search algorithm. </p>
-            </div>
-            <div class="content-block">
-                <h1 class="content-block-header">Calendar+</h1>
-                <p class="content-block-content">Calendar+ is a time-management meteor based web application that allows users to quickly and easily create and manage their calendar. The inspiration behind designing this application came from the frustration of creating my own schedule. When I use different time-management applications, most have many features I don't need that just waste my time when creating my calendar. I wanted to design an application that has only the essential features needed to maximize my efficiency when adding events and tasks to my calendar. </p>
-                <p class="content-block-content">The core features that I implemented into this web application are adding and removing events to an infinite calendar. I used the FullCalendar lib to create the infinite calendar and used their event system to help generate the events. Each event is customizable to the users liking and creates a flexibile experience. In the future, I plan on implementing shared calendars, allowing users to add events to a group calendar. You can find this project on my github <a target="_blank" href="https://github.com/PerrettaAS/calendar-plus">here</a>.</p>
-            </div>
-            <div class="content-block picture-block">
-                <img src="./images/portfolio/CalendarPlus.png" class="a-star-pic">
-                <p class="picture-caption">UI dashboard displaying events on the calendar.</p>
-            </div>
-        </div>
-        <div class="content-container resume-content">
-        	<div class="content-block">
-                <h1 class="content-block-header">Work Experience</h1>
-                <h2 class="content-block-header2">Acuity Brands Software Engineer, Intern ~ Feb 2016 - Dec 2016</h2>
-                <p class="content-block-content">Worked as a full stack developer on optimizing and sustaining plugins and a large scale web application.</p>
-                <p class="content-block-content">Reduced map entity modification process runtime by 80%.</p>
-                <p class="content-block-content">Implemented password encryption to enhance security using the BCrypt hashing algorithm.</p>
-                <p class="content-block-content">Converted existing UI components to an MVC architecture using Mithril.</p>
-                <p class="content-block-content">Trained new hires in company processes and software.</p>
-                <h2 class="content-block-header2">Independent Software, Senior apprentice ~ Feb 2016 - June 2016</h2>
-                <p class="content-block-content">Mentored apprentices through the duration of the Spring 2016 Apprentice 100 cohort.</p>
-                <p class="content-block-content">Provided lectures for apprentices to learn about MongoDB and NoSQL databases.</p>
-                <p class="content-block-content">Trained apprentices on technologies such as JavaScript, Meteor, Git, HTML5, and CSS3.</p>
-                <h2 class="content-block-header2">A100 Software Engineer, Apprentice ~ Oct 2015 - Feb 2016</h2>
-                <p class="content-block-content">Worked as a full-stack developer in an Agile environment.</p></p>
-                <p class="content-block-content">Developed full-featured, scalable web service for an A100 venture Company.</p>
-                <p class="content-block-content">Designed front-end using HTML, CSS, jQuery, Bootstrap, and back-end using Meteor, MongoDB, and Javascript.</p>
-                <p class="content-block-content">Sat in vigorous training sessions on software development technologies and demo training.</p>
-            </div>
-            <div class="content-block">
-                <h1 class="content-block-header">Education</h1>
-                <h2 class="content-block-header2">Central Connecticut State University ~ Aug 2014 - Dec 2017</h2>
-                <p class="content-block-content">Currently Pursuing a Bachelor of Computer Science</p>
-                <p class="content-block-content">GPA: 3.68</p>
-                <p class="content-block-content">Accomplishments: 
-                    <br>- Dean's List: Fall 2014, Spring 2015, Fall 2015, Spring 2016
-                    <br>- Member of the Golden Key Honour Society
-                    <br>- Member of the Alpha Lambda Delta Honour Society</p>
-                <p class="content-block-content">Undergraduate Coursework: Engineering, Computer Organization and Assembly Language Programming, Database Concepts, Design Patterns, Digital Systems Design, Discrete Mathematics, Linear Algebra.</p>
-                <p class="content-block-content">Extra Curricular Activities:
-                    <br>- Computer Science Club ~ Sept 2014 - Present
-                    <br>- CCSU Varsity Esports Club ~ Dec 2014 - Present 
-                </p>
-            </div>
-            <div class="content-block">
-                <h1 class="content-block-header">Technical Experience</h1>
-                <p class="content-block-content">Two years experience in developing software applications in Java.</p>
-                <p class="content-block-content">Four months experience in Meteor, Bootstrap, and a full stack development environment.</p>
-                <p class="content-block-content">Six months experience with HTML, CSS, Javascript, and jQuery</p>
-                <p class="content-block-content">Three months experience as a scrum master facilitating communication between a team of developers and a product owner.</p>
-            </div>
-        </div>
-        <div class="content-container contact-content">
-            <div class="content-block">
-                <h1 class="content-block-header">Contact Details</h1>
-                <h2 class="content-block-header2">Email: <a href="mailto:scottaperretta@gmail.com">Gmail Account</a> | <a href="mailto:scottperretta@my.ccsu.edu">School Email</a></h2>
-                <h2 class="content-block-header2">Phone Number: (860)-378-5205</h2>
-                <h2 class="content-block-header2">Github Account: <a target="_blank" href="https://github.com/PerrettaAS/">PerrettaAS</a></h2>
-                <h2 class="content-block-header2">LinkedIn Account: <a target="_blank" href="https://www.linkedin.com/in/scott-perretta-240a79b1">Scott Perretta</a></h2>
             </div>
         </div>
 	</body>
