@@ -70,45 +70,89 @@ html, body {
   animation-iteration-count: 1;
 }
 
-.container {
-	min-height: 100vh;
-    width: 100%;
-    text-align: center;
-	padding: 15px;
+@media (min-width: 701px) {
+  	.container {
+		min-height: 100vh;
+		width: 100%;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	.content-container {
+		top: 50%;
+		height:18em;
+		margin-top: 15em;
+		min-width: 700px;
+		display: inline-block;
+	}
+
+	.name {
+		font-size: 3.5em;
+		margin: 20px;
+	}
+
+	i.fa {
+		font-size: 3.8em;
+		margin: 19px;
+	}
+
+	i.fa-file-text {
+		font-size: 3.2em;
+		margin: 19px;
+	}
+	
+	.typewriter {
+ 		white-space: nowrap; /* Keeps the content on a single line */
+		animation: 
+			typing 8s steps(40, end),
+			blink-caret .75s step-end infinite;
+	}
 }
 
-.content-container {
-    position:fixed;
-    top: 50%;
-    left: 50%;
-    width:35em;
-    height:18em;
-    margin-top: -9em; /*set to a negative number 1/2 of your height*/
-    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+@media (max-width: 700px) {
+  	.container {
+		min-height: 100vh;
+		width: 100%;
+		text-align: center;
+	}
+
+	.content-container {
+		top: 50%;
+		height:18em;
+		margin-top:2em;
+		min-width: 200px;
+		display: inline-block;
+	}
+
+	.name {
+		font-size: 3em;
+		margin: 15px;
+	}
+
+	i.fa {
+		font-size: 4em;
+		margin: 15px;
+	}
+
+	i.fa-file-text {
+		font-size: 3.4em;
+		margin: 15px;
+	}
+	hr {
+		border:none;
+		border-top:1px dotted #000;
+		color:#fff;
+		background-color:#fff;
+		height:1px;
+		width:80%;
+	}
 }
 
-.name {
-	font-size: 3.5em;
-	margin: 20px;
-}
-
-i.fa {
-	font-size: 3em;
-	margin: 19px;
-}
-
-i.fa-file-text {
-	font-size: 2.6em;
-	margin: 19px;
-}
-
-hr {
-  border:none;
-  border-top:1px dotted #000;
-  color:#fff;
-  background-color:#fff;
-  height:1px;
-  width:100%;
+.typewriter {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid #000000; /* The typwriter cursor */
+	margin: 20px auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
 }
 
 /* Fade effect */ 
@@ -147,17 +191,6 @@ hr {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
-}
-
-.typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #000000; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 20px auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 8s steps(40, end),
-    blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
