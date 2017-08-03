@@ -2,7 +2,6 @@ html, body {
     background: #FFFFFF;  /* fallback for old browsers */
     font-family: "Lato", sans-serif;
 	color: #000000;
-	overflow: hidden;
 }
 
 .fa-github-square {
@@ -70,24 +69,24 @@ html, body {
   animation-iteration-count: 1;
 }
 
-#avatar {
-    background-image: url('https://image.prntscr.com/image/41GYxZPbQB_otZV-ynfaLw.png');
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-	display: table;
-	float: left;
-	margin-left: 40px;
-	margin-right: -20px;
-}
-
 .selected {
 	text-decoration: underline;
 }
 
 @media (min-width: 701px) {
+
+	#avatar {
+		background-image: url('https://image.prntscr.com/image/41GYxZPbQB_otZV-ynfaLw.png');
+		width: 200px;
+		height: 200px;
+		background-size: cover;
+		background-position: center;
+		border-radius: 50%;
+		display: table;
+		float: left;
+		margin-left: 40px;
+		margin-right: -20px;
+	}
 
   	.container {
 		min-height: 100vh;
@@ -129,11 +128,15 @@ html, body {
 		height: 10px; 
 	}
 	
-	.navigation {
+	.desktop-navigation {
 		height: 3em;
 		margin: 0px auto;
 		display: table;
 		min-width: 700px;
+	}
+
+	.mobile-navigation {
+		display: none;
 	}
 
 	.content-container {
@@ -186,10 +189,26 @@ html, body {
 
 	#content-portfolio {
 		display: inline-block;
+		margin-bottom: 25px;
+	}
+
+	.content-box h1 {
+		font-size: 2em;
 	}
 
 	.content-box h2 {
 		font-size: 1.75em;
+	}
+
+	.content-box h4 {
+		font-size: 1.25em;
+	}
+
+	.content-box h5 {
+		margin-top: 15px;
+		margin-bottom: 5px;
+		font-size: 1em;
+		color: #AAAAAA;
 	}
 
 	.content-box p {
@@ -197,43 +216,216 @@ html, body {
 		font-size: 0.6em;
 		line-height: 22.5px;
 	}
+
+	.job-item::before {content: "•  "; color: black} 
+	
+	.job-item {
+		font-size: .75em;
+		text-align: left;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.github-link {
+    	text-decoration: none;
+	}
+
+	.project-image {
+		width: 90%;
+		text-align: center;
+	}
+
+	.job-description {
+		margin-top: 5px;
+	}
+
+	.no-date-header {
+		margin-bottom: 15px;
+	}
+
+	h4 i.fa.fa-github-square {
+		font-size: 1.2em;
+		margin-left: 10px;
+		margin-top: -8px;
+	}
 }
 
 @media (max-width: 700px) {
+
+	#avatar {
+		background-image: url('https://image.prntscr.com/image/41GYxZPbQB_otZV-ynfaLw.png');
+		width: 200px;
+		height: 200px;
+		background-size: cover;
+		background-position: center;
+		border-radius: 50%;
+		display: block;
+		margin: 0 auto;
+	}
+
   	.container {
 		min-height: 100vh;
 		width: 100%;
 		text-align: center;
+		overflow: hidden;
+		display: block;
+	}
+
+	#inner {
+		overflow: hidden;
+		width: 100%;
+		text-align: center;
+	}
+
+	.content {
+		width: 100%;
+	}
+
+	.nav-list li {
+		float: left;
+		width: 33.33%;
+		font-size: 1.5em;
+		height: 50px;
+		display: table;
+		cursor: pointer;
+	}
+
+	h3 {
+		height: inherit;
+		margin: 0;
+		margin-top: 5px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	h3:after {
+		content: '';
+		display: block;
+	}
+	
+	.desktop-navigation {
+		display: none;
+	}
+
+	.mobile-navigation {
+		height: 2em;
+		margin: 0px auto;
+		display: table;
+		width: 100%;
+	}
+
+	.mobile-navigation .nav-list {
+		font-family: "Times New Roman", sans-serif;
+		font-size: .75em;
 	}
 
 	.content-container {
-		top: 50%;
-		height:18em;
-		margin-top:2em;
-		min-width: 200px;
-		display: inline-block;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		width: 100%;
+		text-align: center;
 	}
 
 	.name {
 		font-size: 3em;
-		margin: 15px;
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+
+	.title {
+		font-size: 1.25em;
+		margin-bottom: 10px;
+		color: #AAAAAA;
 	}
 
 	i.fa {
-		font-size: 4em;
-		margin: 15px;
+		font-size: 3.5em;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
+	hr.line {
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 
-	i.fa-file-text {
-		font-size: 3.4em;
-		margin: 15px;
+	.page-content {
+		width: 100%;
+    	font-family: "Georgia", "Times New Roman", sans-serif;
+		display: inline-block;
+		text-align: left;
 	}
-	hr {
-		border:none;
-		border-top:1px dotted #000;
-		color:#fff;
-		background-color:#fff;
-		height:1px;
+
+	.content-box {
+		margin-top: 20px;
+		padding: 20px;
+		box-shadow: 3px 3px 3px #888888;
+	}
+
+	#content-resume {
+		display: inline-block;
+	}
+
+	#content-portfolio {
+		display: inline-block;
+		margin-bottom: 25px;
+	}
+
+	.content-box h1 {
+		font-size: 2em;
+	}
+
+	.content-box h2 {
+		font-size: 1.75em;
+	}
+
+	.content-box h4 {
+		font-size: 1.25em;
+	}
+
+	.content-box h5 {
+		margin-top: 15px;
+		margin-bottom: 5px;
+		font-size: 1em;
+		color: #AAAAAA;
+	}
+
+	.content-box p {
+		margin-top: 15px;
+		font-size: 0.6em;
+		line-height: 22.5px;
+	}
+
+	.job-item::before {content: "•  "; color: black} 
+	
+	.job-item {
+		font-size: .75em;
+		text-align: left;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.github-link {
+    	text-decoration: none;
+	}
+
+	.project-image {
+		width: 90%;
+		text-align: center;
+	}
+
+	.job-description {
+		margin-top: 5px;
+	}
+
+	.no-date-header {
+		margin-bottom: 15px;
+	}
+
+	h4 i.fa.fa-github-square {
+		font-size: 1.2em;
+		margin-left: 10px;
+		margin-top: -8px;
 	}
 }
 
@@ -295,7 +487,7 @@ html, body {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   position: relative;
-  background: #2098D1;
+  background: #000000;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
