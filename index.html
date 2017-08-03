@@ -18,15 +18,106 @@
     <body>
         <div class="container fade-in">
             <div class="content-container">
-                <div class="content">
-                    <h1 class="name">Scott Perretta</h1>
-                    <h2 class="typewriter">Hello, World! My name is Scott and I'm a Software Engineer.</h2>
-                    <hr>
-                    <a title="Github" href="https://github.com/scott-perretta/" target="_blank"><i class="hvr-pop fa fa-github-square"></i></a>
-                    <a title="Linkedin" href="https://www.linkedin.com/in/scott-perretta-240a79b1" target="_blank"><i class="hvr-pop fa fa-linkedin-square"></i></a>
-                    <a title="Facebook" href="https://www.facebook.com/scott.perretta.7?fref=nf&pnref=story" target="_blank"><i class="hvr-pop fa fa-facebook-square"></i></a>
-                    <a title="Resume" href="./resume.pdf" target="_blank"><i class="hvr-pop fa fa-file-text"></i></a>
+                <div id="inner">
+                    <div id="avatar"></div>
+                    <div class="content">
+                        <h1 class="name">Scott Perretta</h1>
+                        <h2 class="title">Software Engineer</h2>
+                        <a title="Github" href="https://github.com/scott-perretta/" target="_blank"><i class="hvr-pop fa fa-github-square"></i></a>
+                        <a title="Linkedin" href="https://www.linkedin.com/in/scott-perretta-240a79b1" target="_blank"><i class="hvr-pop fa fa-linkedin-square"></i></a>
+                        <a title="Facebook" href="https://www.facebook.com/scott.perretta.7?fref=nf&pnref=story" target="_blank"><i class="hvr-pop fa fa-facebook-square"></i></a>
+                    </div>
                 </div>
+            </div>
+            <hr class="line">
+            <nav class="desktop-navigation">
+                <ul class="nav-list">
+                    <li id="nav-about" class="hvr-rectangle-in selected"><h3>A B O U T</h3></li>
+                    <li id="nav-resume" class="hvr-rectangle-in"><h3>R E S U M E</h3></li>
+                    <li id="nav-portfolio" class="hvr-rectangle-in"><h3>P O R T F O L I O</h3></li>
+                </ul>
+            </nav>
+            <nav class="mobile-navigation">
+                <ul class="nav-list">
+                    <li id="nav-about-mobile" class="hvr-rectangle-in selected"><h3>ABOUT</h3></li>
+                    <li id="nav-resume-mobile" class="hvr-rectangle-in"><h3>RESUME</h3></li>
+                    <li id="nav-portfolio-mobile" class="hvr-rectangle-in"><h3>PORTFOLIO</h3></li>
+                </ul>
+            </nav>
+            <hr class="line">
+
+            <div id="content-about" class="page-content">
+                <div class="content-box">
+                    <h2>Welcome!<h2>
+                    <p>My name is Scott Perretta and I am an aspiring software engineer. I started programming when I was 14 and have had a passion for it ever since! On my website, you will find information about my academic and professional experience, as well as projects I've developed for fun.  </p>
+                </div>
+            </div>
+
+            <div id="content-resume" class="page-content">
+                <div class="content-box">
+                    <h1>Work Experience<h1>
+                    <h5>May 2017 - Aug 2017</h5>
+                    <h4>Rally Health, Software Engineering Intern<h4>
+                    <ul class="job-description">
+                        <li class="job-item">Developed backend services in a microservice architecture using Scala.</li>
+                        <li class="job-item">Built a service that checks API compatibility across a microservice ecosystem with Sangria GraphQL.</li>
+                        <li class="job-item">Developed multivariate tests for UX features in production and stored user behavior for test variants using PostgreSQL. </li>
+                        <li class="job-item">Designed a RESTful API that assigns users to a variant group for each multivariate test, and maintains a consistent UX. </li>
+                    </ul>
+                    <hr>
+                    <h5>Feb 2016 - May 2017</h5>
+                    <h4>Acuity Brands, Software Engineering Intern<h4>
+                    <ul class="job-description">
+                        <li class="job-item">Developed, optimized, and maintained plugins and a large scale web app using Typescript and C#.NET.</li>
+                        <li class="job-item">Built a web app where users plot the location and interact with devices for networks of over 30000 devices.</li>
+                        <li class="job-item">Implemented password encryption to enhance security using the BCrypt hashing algorithm.</li>
+                        <li class="job-item">Designed UI components with a MVC architecture using Mithril.js.</li>
+                    </ul>
+                    <hr>
+                    <h5>Oct 2015 - Feb 2016</h5>
+                    <h4>Independent Software, Software Engineering Apprentice<h4>
+                    <ul class="job-description">
+                        <li class="job-item">Built a geolocation web app with the MeteorJS framework and MongoDB.</li>
+                        <li class="job-item">Acted as scrum master of a four-member software development team for a local startup venture.</li>
+                        <li class="job-item">Trained in Agile methodology, software development, and technical communication.</li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h1>Education<h1>
+                    <h5>Dec 2017</h5>
+                    <h4>Central Connecticut State University<h4>
+                    <ul class="job-description">
+                        <li class="job-item">Pursuing B.S. in Computer Science with a minor in Mathematics.</li>
+                        <li class="job-item">Overall GPA:  3.70, Major GPA: 3.73</li>
+                        <li class="job-item">Coursework: Big Data, Algorithms, Software Engineering, Data Structures, Database Concepts, Design Patterns</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="content-portfolio" class="page-content">
+                <div class="content-box">
+                    <h1 class="no-date-header">Technical Projects<h1>
+                    <h4>Capstone Project - Aetna On-call Scheduling<h4>
+                    <ul class="job-description">
+                        <li class="job-item">Worked in a five-member team of software engineers to build an on-call scheduling web app with Aetna.</li>
+                        <li class="job-item">Focused on full stack development using AngularJS on the frontend and C# EF Core on the backend.</li>
+                        <li class="job-item">Built a RESTful API that creates and manages on-call assignment schedules for Aetna's entire engineering department.</li>
+                    </ul>
+                    <hr>
+                    <h4>Community Calendar<a title="Github" href="https://git.io/v7lKM" target="_blank"><i class="hvr-pop fa fa-github-square"></i></a><h4>
+                    <ul class="job-description">
+                        <img class="project-image" src="./images/calendar.png"></img>
+                        <li class="job-item">Built an open source, community calendar web app for the EDSN Foundation to use with their partner organizations.  </li>
+                        <li class="job-item">Focused on full stack development using the ASP.NET framework and MySQL.</li>
+                        <li class="job-item">For more images and information about the application, <a target="_blank" href="https://github.com/scott-perretta/community-calendar/blob/master/documents/user_manual.pdf">click here.</a></li>
+                    </ul>
+                    <hr>
+                    <h4>A* Pathfinding Implementation<a title="Github" href="https://git.io/vQXjV" target="_blank"><i class="hvr-pop fa fa-github-square"></i></a><h4>
+                    <ul class="job-description">
+                        <img class="project-image" src="./images/astar.png"></img>
+                        <li class="job-item">Built a game environment using Java, with an implementation of the A* graph search algorithm to find the most efficient traversal path between two unrestricted nodes.</li>
+                        <li class="job-item">Built a tilemap framework designed for simple map creation and modification.</li>
+                    </ul>
             </div>
         </div>
 	</body>
